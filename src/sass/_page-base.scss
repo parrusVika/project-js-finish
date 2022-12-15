@@ -1,0 +1,54 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+    font-size: 14;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    // padding-left: 32px;
+    // padding-right: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+
+    @media screen and (max-width: 319px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media screen and (min-width: 320px) {
+        // max-width: 320px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        // max-width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        // max-width: 1280px;
+    }
+}

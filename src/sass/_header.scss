@@ -1,0 +1,90 @@
+.overlay {
+    max-width: 1280px;
+    height: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/abstract-background-with-red-lines\ 1\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--dark-bg-olor);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {}
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        height: 216px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: calc(30/35);
+
+    @media screen and (max-width: 780px) {
+        color: transparent;
+    }
+
+}
+
+
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+button {
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(20 / 14);
+
+    text-align: center;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 8px;
+    padding: 6px 18px;
+
+
+
+    &:hover,
+    &:focus {
+        background-color: $accent-btn-cl;
+    }
+}
+
+.item {
+    margin-right: 39px;
+    color: $primary-text-color;
+
+}
+
+.library {
+    margin-right: 20px;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 780px) {
+        margin-right: 32px;
+    }
+}
